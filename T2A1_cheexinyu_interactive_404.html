@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mr Bean</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body{
+  background: #ffffff;
+  font-family:'Fira Sans Condensed', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #4b191c;
+  margin:0 auto;
+  overflow-x :hidden; 
+
+}
+#header-top{
+    padding: 10px 0;
+    background: #9ebb35;
+}
+#header{
+  margin:auto;
+  background-image: url(../T2A1_cheexinyu_interactive_404/header-bg.png);
+    background-position-x: right;
+    background-position-y: center;
+    background-size: initial;
+    background-repeat: no-repeat;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: transparent;
+    position: relative;
+    min-height: 150px;
+}
+#header-middle{
+    background: transparent;
+    width: 1140px;
+    align: center;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 24px;
+}
+#header-bottom{
+    background: transparent;
+    margin: 0 auto;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;  
+    min-height: 44px;
+    position: relative;
+    align-content: center;
+    padding: 0;
+    max-width: 100%;
+}
+nav{
+  display:grid;
+}
+/* styles for navigation here */
+ul{
+  width: 900px;
+  display: flex;
+  background: transparent;
+  margin: 0 auto;
+  align-self: center;
+}
+.headerlist {
+  list-style-type: none;
+  margin: 0 25px;
+}
+.headerlist a{
+  text-decoration: none;
+  font-weight: 450;
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: black;
+}
+.headerlist a:hover{
+  color: #9ebb35 !important;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+}
+/* end of styles for navigation */
+
+#container-bg{
+  background: transparent url(bg-white.jpg) repeat left top;
+}
+.maincontainer{
+  width: 1140px;
+  height: auto;
+  background: transparent;
+  padding-top: 40px;
+  margin-left: auto;
+  margin-right:auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  align-items: center;
+
+}
+#big{
+  background: transparent;
+  display: flex;
+  height: auto;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 100%;
+
+}
+#container404{
+  text-align: center;
+  height: auto;
+  width: 50%;
+  position: relative;
+  padding-top: 40px;
+  padding-left: 40px;
+  font-size: 20px;
+  font-weight: 500;
+}
+#beanworker{
+  max-width: 50%;
+  height: auto;
+  position: relative;
+  align-self: last baseline;
+  margin-bottom: 0;
+}
+
+.responsiveimg{
+  height:auto;
+  max-width: 350px;
+  width: 100%;
+
+}
+#counter{
+  background: transparent url(counter2copy.png) repeat left top;
+  height: 250px;
+  width:100%;
+  align-content: first baseline;
+  display: grid;
+}
+#button{
+  padding-top: 80px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  position: relative;
+}
+#button a{
+  background: #9ebb35;
+  border-radius: 50px;
+  padding: 10px 40px;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#footer-top{
+  padding: 60px 0 75px;
+  background: transparent url(../T2A1_cheexinyu_interactive_404/footer-bg-dark.jpg) repeat left top;
+  display:flex;
+  color: #a69192;
+  text-align: center;
+  margin-bottom: 0;
+}
+#footer1{
+  width: 33.333%;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+}
+#footer2{
+  width: 33.333%;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+}
+#footer3{
+  width: 33.333%;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  text-decoration: none;
+}
+.footerhead{
+  color:#9ebb35;
+  font-size: 17px;
+  font-weight: 500;
+  align-items: center;
+}
+.footerbutton{
+  margin-top: 30px;
+}
+.footerbutton a{
+  padding: 10px 30px;
+  font-size: 12px;
+  line-height: 12px;
+  border-radius: 16px;
+  letter-spacing: 0.2em;
+  color: #FFFFFF;
+  background: #9EBB35;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+}
+.footerbuttonmiddle{
+  margin-top: 30px;
+}
+.footerbuttonmiddle a{
+  display: inline-block;
+   padding: 10px 30px;
+  font-size: 12px;
+  line-height: 12px;
+  border-radius: 16px;
+  letter-spacing: 0.2em;
+  color: #4B191C;
+  background: #FFEDA9;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.containerfooter{
+  width: 75%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+  display: flex;
+  padding: 0 15px;
+}
+#footer-bottom{
+  background-color: #9ebb35;
+  margin: 0;
+  padding: 60px 0 30px;
+  display: flex;
+  align-items:center;
+}
+#footerbtm1{
+  display:block;
+  width: 25%;
+  position: relative;
+  padding: 0 15px 0 15px;
+}
+#footerbtm2{
+  display: block;
+  width: 25%;
+  position: relative;
+  padding: 0 15px 0 15px;
+}
+#footerbtm3{
+  display: block;
+  width: 25%;
+  position: relative;
+  padding: 0 15px 0 15px;
+}
+#footerbtm4{
+  display: block;
+  width: 25%;
+  position: relative;
+  padding: 0 15px 0 15px;
+}
+.footerbtmhead{
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 12px;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+/* footerlist is ul, footerbtmlist is li*/
+.footerlist{
+  display:block;
+  padding-left: 0;
+}
+.footerlist a{
+  line-height: 1.8em;
+  font-size: 11px;
+  font-weight: 300;
+  color: #4b191c;
+  margin: 0;
+  text-transform: uppercase;
+  text-decoration: none;
+
+}
+.footerbtmlist{
+  margin: 0;
+  margin-bottom: 4px;
+  list-style-type: none;
+}
+
+.brown{
+  color: #4b191c;
+}
+.green{
+  color:#9ebb35;
+}
+
+</style>
+</head>
+
+<body>
+<div id="header-top"></div>
+<div id="header">
+    <div id="header-middle">
+     <a href="https://www.mrbean.com.sg"><img src="C:\Users\Xin Yu\OneDrive\Desktop\T2A1_cheexinyu_interactive_404\bootstrap2_logo.png" id="logo"></a>
+    </div>
+</div>
+<div id="header-bottom">
+    <nav>
+        <ul>
+            <li class="headerlist"><a href="https://www.beanmyday.com">SHOP ONLINE</a></li>
+            <li class="headerlist"><a href="#mrbean">MR BEAN</a></li>
+            <li class="headerlist"><a href="https://www.mrbean.com.sg/productinfos">PRODUCTS</a></li>
+            <li class="headerlist"><a href="#storelocator">STORE LOCATOR</a></li>
+            <li class="headerlist"><a href="#franchise">FRANCHISE</a></li>
+            <li class="headerlist"><a href="#contactus">CONTACT US</a></li>
+        </ul>
+    </nav>
+</div>
+<div id="container-bg">
+ <div class="maincontainer">
+    <div id="big">
+      <div id="container404">
+        <img src="404.png" class="responsiveimg">
+        <p>Oh no...... This Mr Bean outlet is closed for today. </p>
+      </div>
+      <div id="beanworker">
+        <img src="sadbean.png" class="responsiveimg">
+      </div>
+    </div>
+ </div>
+</div>
+<div id="counter">
+  <div id="button">
+   <a href="https://www.mrbean.com.sg">Home</a>
+  </div>
+ </div>
+
+
+
+<div id="footer-top">
+  <div class="containerfooter">
+  <div id="footer1">
+   <h2 class="footerhead">Get in the know</h2>
+   <p>Be the first to know about new products, updates, sales & promotions</p>
+
+  </div>
+  <div id="footer2">
+    <h2 class="footerhead">Franchise Opportunity</h2>
+    <p>Join the leading soya food and beverage retail chain in Singapore</p>
+    <div class="footerbuttonmiddle">
+      <a href="https://www.mrbean.com.sg/franchise-system">Find Out How To</a>
+    </div>
+
+  </div>
+  <div id="footer3">
+    <h2 class="footerhead">Shop Online</h2>
+    <p>Having a party? Enjoy life's simple pleasures at your fingertips</p>
+    <div class="footerbutton">
+      <a href="https://www.beanmyday.com">Shop Now</a>
+    </div>
+  </div>
+</div>
+</div>
+
+<div id="footer-bottom">
+  <div class="containerfooter">
+    <div id="footerbtm1">
+     <h2 class="footerbtmhead">Mr Bean</h2>
+     <ul class="footerlist">
+       <li class="footerbtmlist"><a href="https://www.mrbean.com.sg/store-locator%C2%A0">Store</a></li>
+       <li class="footerbtmlist"><a href="https://www.mrbean.com.sg/franchise-system">Franchise</a></li>
+       <li class="footerbtmlist"><a href="https://www.mrbean.com.sg/corporate-sales">Corporate Sales</a></li>
+       <li class="footerbtmlist"><a href="https://www.mrbean.com.sg/vouchers">Vouchers</a></li>
+     </ul>
+   </div>
+   <div id="footerbtm2">
+     <h2 class="footerbtmhead">Customer Service</h2>
+     <ul class="footerlist">
+       <li class="footerbtmlist"><a href="">FAQ</a></li>
+       <li class="footerbtmlist"><a href="">Contact Us</a></li>
+     </ul>
+   </div>
+   <div id="footerbtm3">
+    <h2 class="footerbtmhead">Follow Us</h2>
+    <a href="https://www.facebook.com/MrBeanSingapore"> <i class="fa fa-circle" style="font-size:48px;color:#4B191C"></i></a>
+    <a href="https://www.instagram.com/mrbeansg/"> <i class="fa fa-circle" style="font-size:48px;color:#4B191C"></i></a>
+    <a href="https://www.youtube.com/user/MrBeanSingapore"> <i class="fa fa-circle" style="font-size:48px;color:#4B191C"></i></a>
+   </div>
+   <div id="footerbtm4">
+     <img src="Made With Passion_Logo_Black (RGB).png" height="150px">
+
+   </div>
+  </div>
+</div>
+
+</body>
